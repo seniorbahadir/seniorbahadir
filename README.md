@@ -16,8 +16,26 @@ Goal: In 15 seconds, visitors understand what you build and how you think.
 </p>
 
 <p align="center">
-  <b>.NET</b> • <b>Microservices</b> • <b>API Gateway</b> • <b>Auth</b> • <b>Event-Driven</b> • <b>Kafka/Debezium</b> • <b>RabbitMQ</b> • <b>Redis</b> • <b>SQL Server + MongoDB</b> • <b>Production Reliability</b>
+  <b>.NET</b> • <b>Microservices</b> • <b>API Gateway</b> • <b>Auth</b> • <b>Event-Driven</b> •
+  <b>Kafka/Debezium</b> • <b>RabbitMQ</b> • <b>Redis</b> • <b>SQL Server + MongoDB</b> • <b>Production Reliability</b>
 </p>
+
+<p align="center">
+  <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=white" />
+  <img alt="SQL Server" src="https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoftsqlserver&logoColor=white" />
+  <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white" />
+  <img alt="Kafka" src="https://img.shields.io/badge/Kafka-231F20?logo=apachekafka&logoColor=white" />
+  <img alt="RabbitMQ" src="https://img.shields.io/badge/RabbitMQ-FF6600?logo=rabbitmq&logoColor=white" />
+  <img alt="Redis" src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white" />
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" />
+</p>
+
+---
+
+## 🎯 Now
+- Building **audit/event pipelines** (CDC → Kafka → MongoDB) with idempotent ingestion
+- Designing **gateway-first** microservice access (auth, routing, rate limiting, health checks)
+- Keeping systems **predictable**: clean contracts, clear boundaries, safe failure modes
 
 ---
 
@@ -31,31 +49,37 @@ Goal: In 15 seconds, visitors understand what you build and how you think.
 
 ---
 
-## 🧠 Current obsessions
-- **Reliability**: idempotency, retry strategies, safe failure modes
-- **Auditability**: event timelines, traceable operations, clean event payloads
-- **Maintainability**: consistent naming, small PRs, readable architecture decisions
+## 🧠 Engineering principles
+- **Make failures boring:** idempotency, retries, timeouts, and clear error contracts  
+- **Design for observability:** traceable flows, structured logs, actionable signals  
+- **Keep contracts stable:** consistent naming, small PRs, reviewable change sets  
 
 ---
 
 ## 🧩 Featured projects (pin these)
-### 1) Audit Pipeline (CDC → Kafka → MongoDB)
-**Why:** production-grade audit trail  
-**Highlights:** Debezium connector, Kafka consumer worker, idempotent ingestion, timeline viewer
+> Replace links with your real repos when ready.
 
-### 2) API Gateway (.NET)
-**Why:** a single secure entry point  
-**Highlights:** centralized JWT verification, token forwarding, rate limiting, health checks
+- **Audit Pipeline (CDC → Kafka → MongoDB)**  
+  Why: production-grade audit trail  
+  Highlights: Debezium connector, Kafka consumer worker, idempotent ingestion, timeline viewer  
+  Repo: `https://github.com/seniorbahadir/<audit-pipeline-repo>`
 
-### 3) Shared Data Provider (MongoDB)
-**Why:** reusable foundation across services  
-**Highlights:** cached client/db approach, named connections, DI-first design, optional health checks
+- **API Gateway (.NET)**  
+  Why: a single secure entry point  
+  Highlights: centralized JWT verification, token forwarding, rate limiting, health checks  
+  Repo: `https://github.com/seniorbahadir/<api-gateway-repo>`
 
-> If a project is private, consider a public “showcase” repo with architecture diagrams, ADR notes, and sample payloads.
+- **Shared Data Provider (MongoDB)**  
+  Why: reusable foundation across services  
+  Highlights: cached client/db approach, named connections, DI-first design, optional health checks  
+  Repo: `https://github.com/seniorbahadir/<mongo-provider-repo>`
 
 ---
 
 ## 🗺️ Architecture snapshot
+<details>
+  <summary><b>Show diagram</b></summary>
+
 ```mermaid
 flowchart LR
   A[Clients] --> G[API Gateway]
@@ -72,33 +96,3 @@ flowchart LR
 
   S1 --> R[(Redis Cache)]
   S2 --> Q[(RabbitMQ)]
-```
-
----
-
-## 🧰 Toolbox
-**Backend:** .NET, ASP.NET Core Web API, ADO.NET  
-**Data:** SQL Server (SP-heavy), MongoDB (event/audit store)  
-**Messaging & Streaming:** Kafka, Debezium, RabbitMQ  
-**Caching:** Redis  
-**Infra:** Docker, Compose, CI-friendly setups  
-**Quality:** conventions, PR review discipline, clean contracts, documentation
-
----
-
-## 📈 GitHub signals 
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=seniorbahadir" />
-</p>
-
----
-
-## 🤝 How I like to collaborate
-- Clear contracts, small PRs, reviewable change sets
-- Document decisions with short ADR-style notes: what, why, how
-- Optimize for maintainability over cleverness
-
-<p align="center">
-  <i>Make it work. Make it clear. Make it last.</i>
-</p>
