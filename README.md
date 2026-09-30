@@ -56,23 +56,22 @@ Goal: In 15 seconds, visitors understand what you build and how you think.
 
 ---
 
-## 🧩 Featured projects (pin these)
-> Replace links with your real repos when ready.
+## 🧩 Featured projects
 
 - **Audit Pipeline (CDC → Kafka → MongoDB)**  
   Why: production-grade audit trail  
   Highlights: Debezium connector, Kafka consumer worker, idempotent ingestion, timeline viewer  
-  Repo: `https://github.com/seniorbahadir/<audit-pipeline-repo>`
+  Repo: [backend-architecture-showcase → audit pipeline](https://github.com/seniorbahadir/backend-architecture-showcase/blob/main/docs/05-audit-pipeline-cdc-kafka-mongo.md)
 
 - **API Gateway (.NET)**  
   Why: a single secure entry point  
   Highlights: centralized JWT verification, token forwarding, rate limiting, health checks  
-  Repo: `https://github.com/seniorbahadir/<api-gateway-repo>`
+  Repo: [backend-architecture-showcase](https://github.com/seniorbahadir/backend-architecture-showcase)
 
 - **Shared Data Provider (MongoDB)**  
   Why: reusable foundation across services  
   Highlights: cached client/db approach, named connections, DI-first design, optional health checks  
-  Repo: `https://github.com/seniorbahadir/<mongo-provider-repo>`
+  Repo: [backend-architecture-showcase → audit consumer (MongoDB)](https://github.com/seniorbahadir/backend-architecture-showcase/tree/main/showcase/05-audit-consumer-mongo)
 
 ---
 
